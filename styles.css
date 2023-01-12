@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "playfairdisplay";
+    src: url("fonts/playfairdisplay-variablefont_wght-webfont.woff") format("woff"), url("fonts/playfairdisplay-variablefont_wght-webfont.woff2")
+        format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: "playfairdisplay";
+    src: url("fonts/playfairdisplay-italic-variablefont_wght-webfont.woff") format("woff"), url("fonts/playfairdisplay-italic-variablefont_wght-webfont.woff2")
+        format("woff2");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "permanentmarker";
+    src: url("fonts/permanentmarker-regular-webfont.woff") format("woff"), url("fonts/permanentmarker-regular-webfont.woff2")
+        format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+img {
+    width: 30vw;
+    height: 100vh; 
+}
+
+.picture {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.55);
+    width: 100%;
+    height: max(150px, 20%);
+    top: 5.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creator {
+    position: absolute;
+    color: white;
+    width: 100%;
+    text-align: center;
+    top: 95%;
+    font-size: 0.9rem;
+}
+
+.odin {
+    color: white;
+    font-family: permanentmarker, "Times New Roman", serif;
+    font-size: clamp(1rem, 10vh, 4rem);
+}
+
+.logo img {
+    height: 85%;
+    width: auto;
+}
+
+.container {
+    display: flex;
+}
+
+.child-left, .child-right {
+    width: 10vw;
+    background-color: hwb(180 56% 40%);
+}
+
+.form-container {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+    font-family: playfairdisplay, "Times New Roman", serif;
+}
