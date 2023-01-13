@@ -24,7 +24,7 @@
 
 img {
     width: 30vw;
-    height: 100vh; 
+    height: 100%; 
 }
 
 .picture {
@@ -68,7 +68,7 @@ img {
 
 .child-left, .child-right {
     width: 10vw;
-    background-color: hwb(180 56% 40%);
+    background-color: rgb(24, 41, 46);
 }
 
 .form-container {
@@ -76,6 +76,119 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 40px;
+    /* padding: 0 40px; */
     font-family: playfairdisplay, "Times New Roman", serif;
+    background-color: aliceblue;
+}
+
+.text, .lets {
+    font-size: clamp(0.5rem, 1.6rem, 40px);
+}
+
+
+.container-for-names, .container-for-contacts, .container-for-password {
+    display: flex;
+}
+
+form p {
+    margin: 30px 30px 0 0;
+}
+
+.button + p {
+    font-size: clamp(0.5rem, 1.3rem, 25px);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: playfairdisplay, "Times New Roman", serif;
+    background-color: rgb(24, 41, 46);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+button:disabled {
+    background-color: rgb(179, 178, 178);
+}
+
+button:hover {
+    box-shadow: 2px 2px 4px grey;
+}
+
+.form-container>div{
+    padding: 0 30px;
+}
+
+#form {
+    padding: 0;
+}
+
+.lets {
+    margin: 0;
+}
+
+form {
+    box-shadow: 0 3px 5px grey;
+    background-color: white;
+    padding: 30px;
+}
+
+.button, .already {
+    margin: 30px 0 0 30px;
+}
+
+span {
+    color:rgb(54, 84, 94);
+    font-weight: bold;
+}
+
+input {
+    appearance: none;
+    border:rgb(180, 190, 196) solid 1px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    outline:none;
+}
+
+input:focus {
+    border-color:rgb(10, 94, 119);
+    box-shadow: 2px 2px 2px rgb(182, 186, 187);
+}
+
+a:link {
+    color: rgb(167, 236, 248);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(49, 179, 202);
+}
+
+.error {
+    border-color:rgb(211, 22, 22);
+}
+
+.error+span {
+    position: relative;
+}
+
+.error+span::after{
+    content: "*Passwords do not match!";
+    color: rgb(211, 22, 22);
+    position: absolute;
+    top: 22px;
+    right: 108px;
+    font-size: 0.8rem;
+    font-family: 'Times New Roman', serif;
+    white-space: nowrap ;
+    
+}
+
+.error:focus {
+    border-color: red;
+}
+
+input:hover {
+    background-color: aliceblue;
 }
