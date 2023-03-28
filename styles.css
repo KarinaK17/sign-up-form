@@ -1,194 +1,200 @@
 @font-face {
-    font-family: "playfairdisplay";
-    src: url("fonts/playfairdisplay-variablefont_wght-webfont.woff") format("woff"), url("fonts/playfairdisplay-variablefont_wght-webfont.woff2")
-        format("woff2");
-    font-weight: normal;
-    font-style: normal;
-  }
-
-@font-face {
-    font-family: "playfairdisplay";
-    src: url("fonts/playfairdisplay-italic-variablefont_wght-webfont.woff") format("woff"), url("fonts/playfairdisplay-italic-variablefont_wght-webfont.woff2")
-        format("woff2");
-    font-weight: normal;
-    font-style: italic;
+  font-family: "playfairdisplay";
+  src: url("fonts/playfairdisplay-variablefont_wght-webfont.woff")
+      format("woff"),
+    url("fonts/playfairdisplay-variablefont_wght-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "permanentmarker";
-    src: url("fonts/permanentmarker-regular-webfont.woff") format("woff"), url("fonts/permanentmarker-regular-webfont.woff2")
-        format("woff2");
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: "playfairdisplay";
+  src: url("fonts/playfairdisplay-italic-variablefont_wght-webfont.woff")
+      format("woff"),
+    url("fonts/playfairdisplay-italic-variablefont_wght-webfont.woff2")
+      format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "permanentmarker";
+  src: url("fonts/permanentmarker-regular-webfont.woff") format("woff"),
+    url("fonts/permanentmarker-regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 
 img {
-    width: 30vw;
-    height: 100%; 
+  width: 30vw;
+  height: 100%;
 }
 
 .picture {
-    position: relative;
+  position: relative;
 }
 
 .logo {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.55);
-    width: 100%;
-    height: max(150px, 20%);
-    top: 5.5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.55);
+  width: 100%;
+  height: max(150px, 20%);
+  top: 5.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .creator {
-    position: absolute;
-    color: white;
-    width: 100%;
-    text-align: center;
-    top: 95%;
-    font-size: 0.9rem;
+  position: absolute;
+  color: white;
+  width: 100%;
+  text-align: center;
+  top: 95%;
+  font-size: 0.9rem;
 }
 
 .odin {
-    color: white;
-    font-family: permanentmarker, "Times New Roman", serif;
-    font-size: clamp(1rem, 10vh, 4rem);
+  color: white;
+  font-family: permanentmarker, "Times New Roman", serif;
+  font-size: clamp(1rem, 10vh, 4rem);
 }
 
 .logo img {
-    height: 85%;
-    width: auto;
+  height: 85%;
+  width: auto;
 }
 
 .container {
-    display: flex;
+  display: flex;
 }
 
-.child-left, .child-right {
-    width: 10vw;
-    background-color: rgb(24, 41, 46);
+.child-left,
+.child-right {
+  width: 10vw;
+  background-color: rgb(24, 41, 46);
 }
 
 .form-container {
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* padding: 0 40px; */
-    font-family: playfairdisplay, "Times New Roman", serif;
-    background-color: aliceblue;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding: 0 40px; */
+  font-family: playfairdisplay, "Times New Roman", serif;
+  background-color: aliceblue;
 }
 
-.text, .lets {
-    font-size: clamp(0.5rem, 1.6rem, 40px);
+.text,
+.lets {
+  font-size: clamp(0.5rem, 1.6rem, 40px);
 }
 
-
-.container-for-names, .container-for-contacts, .container-for-password {
-    display: flex;
+.container-for-names,
+.container-for-contacts,
+.container-for-password {
+  display: flex;
 }
 
 form p {
-    margin: 30px 30px 0 0;
+  margin: 30px 30px 0 0;
 }
 
 .button + p {
-    font-size: clamp(0.5rem, 1.3rem, 25px);
+  font-size: clamp(0.5rem, 1.3rem, 25px);
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 15px;
-    font-family: playfairdisplay, "Times New Roman", serif;
-    background-color: rgb(24, 41, 46);
-    color: white;
-    font-weight: bold;
-    border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-family: playfairdisplay, "Times New Roman", serif;
+  background-color: rgb(24, 41, 46);
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
 }
 
 button:disabled {
-    background-color: rgb(179, 178, 178);
+  background-color: rgb(179, 178, 178);
 }
 
 button:hover {
-    box-shadow: 2px 2px 4px grey;
+  box-shadow: 2px 2px 4px grey;
 }
 
-.form-container>div{
-    padding: 0 30px;
+.form-container > div {
+  padding: 0 30px;
 }
 
 #form {
-    padding: 0;
+  padding: 0;
 }
 
 .lets {
-    margin: 0;
+  margin: 0;
 }
 
 form {
-    box-shadow: 0 3px 5px grey;
-    background-color: white;
-    padding: 30px;
+  box-shadow: 0 3px 5px grey;
+  background-color: white;
+  padding: 30px;
 }
 
-.button, .already {
-    margin: 30px 0 0 30px;
+.button,
+.already {
+  margin: 30px 0 0 30px;
 }
 
 span {
-    color:rgb(54, 84, 94);
-    font-weight: bold;
+  color: rgb(54, 84, 94);
+  font-weight: bold;
 }
 
 input {
-    appearance: none;
-    border:rgb(180, 190, 196) solid 1px;
-    border-radius: 4px;
-    font-size: 1.2rem;
-    outline:none;
+  appearance: none;
+  border: rgb(180, 190, 196) solid 1px;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  outline: none;
 }
 
 input:focus {
-    border-color:rgb(10, 94, 119);
-    box-shadow: 2px 2px 2px rgb(182, 186, 187);
+  border-color: rgb(10, 94, 119);
+  box-shadow: 2px 2px 2px rgb(182, 186, 187);
 }
 
 a:link {
-    color: rgb(167, 236, 248);
-    text-decoration: none;
+  color: rgb(167, 236, 248);
+  text-decoration: none;
 }
 
 a:visited {
-    color: rgb(49, 179, 202);
+  color: rgb(49, 179, 202);
 }
 
 .error {
-    border-color:rgb(211, 22, 22);
+  border-color: rgb(211, 22, 22);
 }
 
-.error+span {
-    position: relative;
+.error + span {
+  position: relative;
 }
 
-.error+span::after{
-    content: "*Passwords do not match!";
-    color: rgb(211, 22, 22);
-    position: absolute;
-    top: 22px;
-    right: 108px;
-    font-size: 0.8rem;
-    font-family: 'Times New Roman', serif;
-    white-space: nowrap ;
-    
+.error + span::after {
+  content: "*Passwords do not match!";
+  color: rgb(211, 22, 22);
+  position: absolute;
+  top: 22px;
+  right: 108px;
+  font-size: 0.8rem;
+  font-family: "Times New Roman", serif;
+  white-space: nowrap;
 }
 
 .error:focus {
-    border-color: red;
+  border-color: red;
 }
 
 input:hover {
-    background-color: aliceblue;
+  background-color: aliceblue;
 }

@@ -1,109 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up Form</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="child-left"></div>
-        <div class="picture">
-            <div class="logo">
-                <img src="odin-lined.png" alt="odin logo">
-                <div class="odin">ODIN</div>
-            </div>
-            <div class="creator">Photo by <a href="https://unsplash.com/@eberhardgross?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">eberhard 🖐 grossgasteiger</a> on <a href="https://unsplash.com/images/nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-            </div>
-            <img src="mountain.jpg" alt="starry sky with logo">
+      <div class="child-left"></div>
+      <div class="picture">
+        <div class="logo">
+          <img src="odin-lined.png" alt="odin logo" />
+          <div class="odin">ODIN</div>
         </div>
-        <div class="form-container">
-            <div class="text">
-                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br> Sign up <em>now</em> to get started.</p>
-                <p>You <em>know</em> you want to.</p>
-            </div>
-            <div class="form" id="form">
-                <form action="" id="my-form">
-                    <p class="lets">Let's do this!</p>
-                    <div class="container-for-names">
-                        <p>
-                            <label for="first-name">First name *</label>
-                            <br>
-                            <input type="text" id="first-name" name="first-name" required/>
-                        </p>
-                        <p>
-                            <label for="last-name">Last name *</label>
-                            <br>
-                            <input type="text" id="last-name" name="last-name" required/>
-                        </p>
-                    </div>
-                    <div class="container-for-contacts">
-                        <p>
-                            <label for="email">Email *</label>
-                            <br>
-                            <input type="email" id="email" name="email" required/>
-                        </p>
-                        <p>
-                            <label for="phone-number">Phone number</label>
-                            <br>
-                            <input type="tel" id="phone-number" name="phone-number" />
-                        </p>
-                    </div>
-                    <div class="container-for-password">
-                        <p>
-                            <label for="password">Password</label>
-                            <br>
-                            <input type="password" id="password" name="password" required/>
-                            <span></span>
-                        </p>
-                        <p>
-                            <label for="password-conformation">Password conformation</label>
-                            <br>
-                            <input type="password" id="password-conformation" name="password-conformation" required/>
-                        </p>
-                    </div>
-                </form>
-                <div class="button">
-                    <button type="submit" form="my-form" >Create Account</button>
-                </div>
-                <p class="already">Already have an account? <span>Log in</span></p>
-            </div>
+        <div class="creator">
+          Photo by
+          <a
+            href="https://unsplash.com/@eberhardgross?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >eberhard 🖐 grossgasteiger</a
+          >
+          on
+          <a
+            href="https://unsplash.com/images/nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Unsplash</a
+          >
         </div>
-        <div class="child-right"></div>
+        <img src="mountain.jpg" alt="starry sky with logo" />
+      </div>
+      <div class="form-container">
+        <div class="text">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. <br />
+            Sign up <em>now</em> to get started.
+          </p>
+          <p>You <em>know</em> you want to.</p>
+        </div>
+        <div class="form" id="form">
+          <form action="" id="my-form">
+            <p class="lets">Let's do this!</p>
+            <div class="container-for-names">
+              <p>
+                <label for="first-name">First name *</label>
+                <br />
+                <input type="text" id="first-name" name="first-name" required />
+              </p>
+              <p>
+                <label for="last-name">Last name *</label>
+                <br />
+                <input type="text" id="last-name" name="last-name" required />
+              </p>
+            </div>
+            <div class="container-for-contacts">
+              <p>
+                <label for="email">Email *</label>
+                <br />
+                <input type="email" id="email" name="email" required />
+              </p>
+              <p>
+                <label for="phone-number">Phone number</label>
+                <br />
+                <input type="tel" id="phone-number" name="phone-number" />
+              </p>
+            </div>
+            <div class="container-for-password">
+              <p>
+                <label for="password">Password</label>
+                <br />
+                <input type="password" id="password" name="password" required />
+                <span></span>
+              </p>
+              <p>
+                <label for="password-conformation">Password conformation</label>
+                <br />
+                <input
+                  type="password"
+                  id="password-conformation"
+                  name="password-conformation"
+                  required
+                />
+              </p>
+            </div>
+          </form>
+          <div class="button">
+            <button type="submit" form="my-form">Create Account</button>
+          </div>
+          <p class="already">Already have an account? <span>Log in</span></p>
+        </div>
+      </div>
+      <div class="child-right"></div>
     </div>
     <script>
+      let passwordInput = document.getElementById("password");
+      let passwordConformationInput = document.getElementById(
+        "password-conformation"
+      );
+      let button = document.querySelector("button");
 
-        let passwordInput=document.getElementById("password");
-        let passwordConformationInput=document.getElementById("password-conformation");
-        let button=document.querySelector("button");
+      function CheckPassword() {
+        let password = document.getElementById("password").value;
+        let passwordConformation = document.getElementById(
+          "password-conformation"
+        ).value;
 
-        function CheckPassword(){
+        if (password !== passwordConformation) {
+          passwordInput.classList.add("error");
+          passwordConformationInput.classList.add("error");
+          button.disabled = true;
 
-            let password=document.getElementById("password").value;
-            let passwordConformation=document.getElementById("password-conformation").value;
-        
-            if (password!==passwordConformation) {
-                passwordInput.classList.add("error");
-                passwordConformationInput.classList.add("error");
-                button.disabled=true;
+          console.log("your password is", password);
+          console.log("your conformation password is", passwordConformation);
+        } else {
+          passwordInput.classList.remove("error");
+          passwordConformationInput.classList.remove("error");
+          button.disabled = false;
 
-                console.log("your password is",password);
-                console.log("your conformation password is",passwordConformation);
-            } else {
-                passwordInput.classList.remove("error");
-                passwordConformationInput.classList.remove("error");
-                button.disabled=false;
-
-                console.log("your password is",password);
-                console.log("your conformation password is",passwordConformation);
-            }
+          console.log("your password is", password);
+          console.log("your conformation password is", passwordConformation);
         }
+      }
 
-        passwordInput.addEventListener("input", CheckPassword);
-        passwordConformationInput.addEventListener("input", CheckPassword);
-
+      passwordInput.addEventListener("input", CheckPassword);
+      passwordConformationInput.addEventListener("input", CheckPassword);
     </script>
-</body>
+  </body>
 </html>
